@@ -1,0 +1,19 @@
+﻿@page
+@{
+    if (!ViewBag.passwordVerified)
+    {
+        <p>Password did not match, please try again.</p>
+    }
+}
+
+<form method="post">
+    <label>Please input username</label><br />
+    <input type="text" name="username" /><br />
+    <label>Please input email</label><br />
+    <input type="email" name="email" /><br />
+    <label>Please input passsword</label><br />
+    <input type="password" name="password" /><br />
+    <label>Please veryify your passsword</label><br />
+    <input type="password" name="verify" /><br />
+    <input type="submit" />
+</form>
