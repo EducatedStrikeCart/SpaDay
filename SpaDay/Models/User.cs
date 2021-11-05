@@ -11,12 +11,11 @@ namespace SpaDay.Models
         {
         }
 
-        public User(string u, string e, string p)
+        public User(string username, string email, string password)
         {
-            Username = u;
-            Email = e;
-            Password = p;
+            Username = username;
+            Email = email;
+            Password = password;
         }
-
     }
 }
